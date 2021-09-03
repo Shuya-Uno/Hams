@@ -1,0 +1,147 @@
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../web-fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../web-fonts/Roboto-Italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../web-fonts/Roboto-Bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../web-fonts/Roboto-BoldItalic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Calligraffiti";
+  src: url("../web-fonts/Calligraffiti-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.menu {
+  background-color: #FED6DB;
+}
+
+body {
+  color: #FED6DB;
+
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.page {
+  background-color: #D26464;
+  margin: 0 3% 0 3%;
+  padding: 2%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* flex-direction: column; */
+}
+
+/* nav {
+  align-self: flex-end;
+} */
+
+.main-visual,
+.main-column {
+  margin: 35px 0 35px 0;
+}
+
+.main-visual p {
+  margin-left: 0;
+}
+
+h1,
+h2,
+nav,
+.menu-indicator {
+  font-family: "Calligraffiti", cursive;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2,
+nav,
+.menu-indicator {
+  font-size: 1.5em;
+}
+
+h2 {
+  margin-bottom: 1px;
+}
+
+a,
+article p {
+  margin-left: 1em;
+}
+
+a {
+  color: #FED6DB;
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+
+strong,
+a:hover {
+  color: #211;
+}
+
+.menu-indicator {
+  position: fixed;
+  right: 3.5%;
+  bottom: 0;
+}
+
+.menu {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  right: -17%;
+  top: 0;
+
+  transition: all, 0.3s;
+}
+
+.menu:hover {
+  transform: translateX(-75%);
+}
+
+
+@media only screen and (min-width:961px) {
+  .main {
+    width: 46.25%;
+  }
+}
