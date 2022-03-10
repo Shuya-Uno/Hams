@@ -41,13 +41,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #D26464;
+  --sub-color: #FED6DB;
+  --accent-color: #211;
+}
+
 body,
 .menu {
-  background-color: #FED6DB;
+  background-color: var(--sub-color);
 }
 
 body {
-  color: #FED6DB;
+  color: var(--sub-color);
 
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -55,7 +61,7 @@ body {
 }
 
 .page {
-  background-color: #D26464;
+  background-color: var(--main-color);
   margin: 0 3% 0 3%;
   padding: 2%;
 }
@@ -108,7 +114,7 @@ article p {
 }
 
 a {
-  color: #FED6DB;
+  color: var(--sub-color);
   text-decoration: none;
 
   transition: all 0.25s;
@@ -116,7 +122,7 @@ a {
 
 strong,
 a:hover {
-  color: #211;
+  color: var(--accent-color);
 }
 
 .menu-indicator {
